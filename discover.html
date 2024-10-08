@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SavorSweet Chocolates - Discover Flavors</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Discover the Flavors</h1>
+        <a href="index.html" class="cta-button">Back to Home</a>
+    </header>
+
+    <section class="animation-section">
+        <h2>Our Signature Flavors</h2>
+        <div class="chocolate-boxes">
+            <div class="chocolate milk">Milk Chocolate</div>
+            <div class="chocolate white">White Chocolate</div>
+            <div class="chocolate dark">Dark Chocolate</div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 SavorSweet. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        window.addEventListener('load', function () {
+            const chocolates = document.querySelectorAll('.chocolate');
+            chocolates.forEach((chocolate, index) => {
+                setTimeout(() => {
+                    chocolate.classList.add('animate');
+                }, index * 200);
+            });
+        });
+    </script>
+</body>
+</html>
